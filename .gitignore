@@ -1,0 +1,12 @@
+qa/
+referencias/
+node_modules/
+.sites-runtime/
+*.log
+Thumbs.db
+.DS_Store
+.vscode/
+tools/
+LEEME.md
+ABRIR-PAGINA.html
+*.code-workspace
