@@ -9,9 +9,9 @@
   if (mediaPath(data.identidad?.logo)) document.querySelectorAll('.brand-logo').forEach(img => { img.src = data.identidad.logo; });
   if (mediaPath(data.identidad?.logoClaro)) document.querySelector('.closing-logo').src = data.identidad.logoClaro;
   if (Array.isArray(data.servicios) && data.servicios.length) {
-    data.servicios.forEach((item, i) => {
+    data.servicios.forEach(item => {
       const row = make('article', 'service-row reveal');
-      row.append(make('span', 'small-index', String(i + 1).padStart(2, '0')), make('h3', '', item.titulo), make('p', '', item.descripcion));
+      row.append(make('h3', '', item.titulo), make('p', '', item.descripcion));
       document.querySelector('#servicios-lista').append(row);
     });
   }
